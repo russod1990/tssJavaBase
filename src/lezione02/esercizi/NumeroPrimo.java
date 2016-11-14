@@ -24,18 +24,22 @@ public class NumeroPrimo {
         // Chiede input
         System.out.println("inserisci il numero ");
 
-        // Legge il numero in input
+        // Legge il numero in input e dichiarazione variabili per la risoluzione
         String risultato;
         int numero = s.nextInt();
         int c = 1, i = 0;
 
-        // Operazione
+        // Operazione ciclo while che verifica se il divisore "c" è minore del numero e se il contatore "i" non è maggiore di 2
         while ((c <= numero) && !(i > 2)) {
+            // Il numero diviso per il divisore da resto 0?
             if (numero % c == 0) {
+                // Incremento contatore "i" per tenere conto di quante volte l'operazione da resto 0
                 i = i + 1;
             }
+            // Incremento il divisore
             c++;
         }
+        // Contatore "i" maggiore di 2? Vero/Falso ed Output console
         risultato = (i > 2) ? "non è un numero primo" : "numero primo";
         System.out.println(risultato);
     }
