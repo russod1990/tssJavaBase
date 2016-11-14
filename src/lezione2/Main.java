@@ -40,7 +40,7 @@ public class Main {
             int x = 5; //varibaile locale
         }
         int x = 10; //variabile locale
-        System.out.println("" + x);
+        System.out.println("" + totale);
     }
 
 }
