@@ -19,26 +19,24 @@ public class PariDispari {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-
+        
+        // Variabile contenitore per il risultato
+        String risultato;
+        
         // Crea oggetto standard per leggere input
         Scanner s = new Scanner(System.in);
-
+        
         // Chiede input
         System.out.println("inserisci il numero ");
 
         // Legge il numero in input
         int numero = s.nextInt();
 
-        // Svolgo l'operazione di verifica pari o dispari
-        if (numero % 2 == 0) {
-
-            // Output da console numero pari
-            System.out.println("il numero inserito " + numero + " è pari");
-        } else {
-
-            // Output da console numero dispari
-            System.out.println("il numero inserito " + numero + " è dispari");
-        }
+        // Svolgo l'operazione di verifica pari o dispari (if ternario)
+        risultato =(numero%2)==0?"il numero è pari":"il numero è dispari";
+        
+        // Output da console
+        System.out.println(risultato);
 
     }
 
