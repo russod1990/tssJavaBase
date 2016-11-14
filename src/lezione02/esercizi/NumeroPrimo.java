@@ -30,13 +30,13 @@ public class NumeroPrimo {
         int c = 1, i = 0;
 
         // Operazione
-        while ((c <= numero)&&(i<2)) {
+        while ((c <= numero) && !(i > 2)) {
             if (numero % c == 0) {
                 i = i + 1;
             }
             c++;
         }
-        risultato = (i == 2) ? "numero primo" : "non è un numero primo";
+        risultato = (i > 2) ? "non è un numero primo" : "numero primo";
         System.out.println(risultato);
     }
 
