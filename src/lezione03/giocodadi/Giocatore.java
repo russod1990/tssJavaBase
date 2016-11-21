@@ -10,5 +10,15 @@ package lezione03.giocodadi;
  * @author tss
  */
 public class Giocatore {
-    
+
+    private String giocatore;
+    private int soldi;
+
+    public void vince() {
+        soldi++;
+    }
+
+    public void perde() {
+        soldi--;
+    }
 }
