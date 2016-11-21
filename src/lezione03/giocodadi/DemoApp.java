@@ -16,6 +16,23 @@ public class DemoApp {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Giocatore g = new Giocatore("Rossi", 100);
+
+        Dado gDado = new Dado(6);
+        Dado bDado = new Dado(6);
+        int contatore=0;
+
+        while (g.saldo() > 0) {
+            int lancioGiocatore = gDado.lancio();
+            int lancioBanco = bDado.lancio();
+            if (lancioGiocatore > lancioBanco) {
+                g.vince();
+            } else {
+                g.perde();
+            }
+            contatore++;
+            System.out.println(contatore + " # risultato lancio: - giocatore = "+ lancioGiocatore + " - banco = "+ lancioBanco + " - saldo = "+g.saldo());
+        }
     }
-    
+
 }

@@ -5,14 +5,22 @@
  */
 package lezione03.giocodadi;
 
+import java.util.Random;
+
 /**
  *
  * @author tss
  */
 public class Dado {
-    private int numeroFacce=6;
-    
-    public int lancio(){
-        return 0;
+
+    private int numeroFacce;
+
+    public Dado(int facce) {
+        numeroFacce = facce;
+    }
+
+    public int lancio() {
+        Random rnd= new Random();
+        return rnd.nextInt(numeroFacce)+1;
     }
 }
