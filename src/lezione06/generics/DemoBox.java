@@ -17,10 +17,15 @@ public class DemoBox {
     public static void main(String[] args) {
         // TODO code application logic here
 
-        Box box = new Box(new Persona("Rossi", "Mario"));
+        Box box = new Box(new Autista("Rossi", "Mario","B"));
         System.out.println(box);
-        Persona object = (Persona) box.getObject();
-        
+        if (box.getObject() instanceof Persona) {
+            Persona p = (Persona) box.getObject();
+            System.out.println(p.toString());
+        } else {
+            System.err.println("errore");
+        }
+
     }
 
 }

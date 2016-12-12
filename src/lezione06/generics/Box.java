@@ -9,7 +9,7 @@ package lezione06.generics;
  *
  * @author tss
  */
-public class Box {
+public class Box<T> {
     private Object object;
 
     public Box(Object object) {

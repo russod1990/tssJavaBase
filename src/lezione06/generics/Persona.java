@@ -5,7 +5,6 @@
  */
 package lezione06.generics;
 
-import lezione06.ordinamento.*;
 import java.util.Date;
 import java.util.Objects;
 
