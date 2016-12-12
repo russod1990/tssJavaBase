@@ -93,10 +93,5 @@ public class Persona {
         }
         return true;
     }
-    
-    
+
 }
-
-    
-
-

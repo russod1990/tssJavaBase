@@ -35,7 +35,7 @@ public class Autista extends Persona {
 
     @Override
     public int hashCode() {
-        int hash = super.hashCode()+Objects.hashCode(this.patente);
+        int hash = super.hashCode() + Objects.hashCode(this.patente);
         return hash;
     }
 

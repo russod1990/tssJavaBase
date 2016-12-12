@@ -22,12 +22,14 @@ public class DemoEquals {
         System.out.println(a.equals(b));
 
     }
-static int cerca (Object[] anagrafica, Object elemento){
-    for (int i = 0; i < anagrafica.length; i++) {
-        if (anagrafica[i].equals(elemento)){
-            return i;
+
+    static int cerca(Object[] anagrafica, Object elemento) {
+        for (int i = 0; i < anagrafica.length; i++) {
+            if (anagrafica[i].equals(elemento)) {
+                return i;
+            }
+
         }
-            
-    } return -1;
-}
+        return -1;
+    }
 }
