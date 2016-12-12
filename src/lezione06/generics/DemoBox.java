@@ -16,6 +16,11 @@ public class DemoBox {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+
+        Box box = new Box(new Persona("Rossi", "Mario"));
+        System.out.println(box);
+        Persona object = (Persona) box.getObject();
+        
     }
-    
+
 }
