@@ -38,4 +38,15 @@ public class LibreriaFunzioniArray {
         }
         System.out.println("FINE STAMPA");
     }
+    
+    public static int cerca(Object[] objects, Object item){
+        int result=-1;
+        for(int i=0; i<objects.length;i++){
+            if (objects[i].equals(item)){
+                result =i;
+                break;
+            }
+        }
+        return result;
+    }
 }

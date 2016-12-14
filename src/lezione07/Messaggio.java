@@ -5,6 +5,8 @@
  */
 package lezione07;
 
+import java.util.Objects;
+
 /**
  *
  * @author tss
@@ -33,6 +35,32 @@ public class Messaggio implements Comparable<Messaggio>{
     public int compareTo(Messaggio o) {
         return this.testo.compareTo(o.getTesto());
     }
+
+    @Override
+    public int hashCode() {
+        int hash = 3;
+        hash = 67 * hash + Objects.hashCode(this.testo);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Messaggio other = (Messaggio) obj;
+        if (!Objects.equals(this.testo, other.testo)) {
+            return false;
+        }
+        return true;
+    }
+    
     
     
 }
