@@ -15,7 +15,7 @@ public class LibreriaFunzioniArray {
 
     }
 
-    private static void ordina(Persona[] elencoPersone) {
+    public static void ordina(Persona[] elencoPersone) {
         boolean disordinato;
         do {
             disordinato = false;
