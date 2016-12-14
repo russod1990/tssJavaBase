@@ -10,12 +10,17 @@ package lezione07.interfacce;
  * @author tss
  */
 public interface MultiMedia {
-    
-    
-    public static final String PLAYER="CD_PLAYER";
-    
-    void play();
-    void stop();
-    void pause();
-    
+
+    public static final String PLAYER = "CD_PLAYER";
+
+    public void play();
+
+    public void stop();
+
+    public void pause();
+
+    default public void reset() {
+        System.out.println(this.getClass() + "." + "reset()... di default...");
+    }
+
 }
