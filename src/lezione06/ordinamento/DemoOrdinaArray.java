@@ -5,6 +5,7 @@
  */
 package lezione06.ordinamento;
 
+import lezione07.Persona;
 import java.util.ArrayList;
 
 /**
