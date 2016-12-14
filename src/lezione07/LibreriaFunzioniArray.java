@@ -15,19 +15,27 @@ public class LibreriaFunzioniArray {
 
     }
 
-    public static void ordina(Persona[] elencoPersone) {
+    public static void ordina(Comparable[] array) {
         boolean disordinato;
         do {
             disordinato = false;
-            for (int i = 0; i < elencoPersone.length - 1; i++) {
-                Persona p = elencoPersone[i];
-                Persona pNext = elencoPersone[i + 1];
+            for (int i = 0; i < array.length - 1; i++) {
+                Comparable p = array[i];
+                Comparable pNext = array[i + 1];
                 if (p.compareTo(pNext) >= 0) {
-                    elencoPersone[i] = pNext;
-                    elencoPersone[i + 1] = p;
+                    array[i] = pNext;
+                    array[i + 1] = p;
                     disordinato = true;
                 }
             }
         } while (disordinato);
+    }
+
+    public static void stampa(Object[] objects) {
+        System.out.println("INIZIO STAMPA");
+        for (Object object : objects) {
+            System.out.println(object);
+        }
+        System.out.println("FINE STAMPA");
     }
 }

@@ -5,10 +5,6 @@
  */
 package lezione07;
 
-import lezione06.ordinamento.*;
-import lezione07.Persona;
-import java.util.ArrayList;
-
 /**
  *
  * @author tss
@@ -26,11 +22,20 @@ public class DemoOrdinaArray {
         Persona d = new Persona("Magenta", "Tiziano");
         elencoPersone[3] = d;
 
-        stampa(elencoPersone);
+        LibreriaFunzioniArray.stampa(elencoPersone);
 
         LibreriaFunzioniArray.ordina(elencoPersone);
 
-        stampa(elencoPersone);
+        LibreriaFunzioniArray.stampa(elencoPersone);
+
+        Messaggio[] m = new Messaggio[3];
+        m[0]=new Messaggio("Ciao");
+        m[1]=new Messaggio("Buongiorno");
+        m[2]=new Messaggio("Arrivederci");
+        
+        LibreriaFunzioniArray.ordina(m);
+        LibreriaFunzioniArray.stampa(m);
+        
     }
 
 //    private static void ordina(Comparable<Persona>[] elencoPersone) {
@@ -48,13 +53,6 @@ public class DemoOrdinaArray {
 //            }
 //        } while (disordinato);
 //    }
-
-    private static void stampa(Persona[] elencoPersone) {
-        System.out.println("INIZIO STAMPA");
-        for (Persona p : elencoPersone) {
-            System.out.println(p);
-        }
-        System.out.println("FINE STAMPA");
-    }
+    
 
 }
