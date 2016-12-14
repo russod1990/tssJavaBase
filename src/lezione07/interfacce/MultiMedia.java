@@ -23,4 +23,7 @@ public interface MultiMedia {
         System.out.println(this.getClass() + "." + "reset()... di default...");
     }
 
+    public static String version(){
+        return "1.0";
+    }
 }
