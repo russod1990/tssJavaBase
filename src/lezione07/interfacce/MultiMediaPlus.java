@@ -10,7 +10,9 @@ package lezione07.interfacce;
  * @author tss
  */
 public interface MultiMediaPlus extends MultiMedia {
+
     public void fastForward();
+
     public void fastRewind();
-    
+
 }
