@@ -5,6 +5,8 @@
  */
 package lezione07;
 
+import libreria.LibreriaFunzioniArray;
+
 /**
  *
  * @author tss
@@ -35,6 +37,10 @@ public class DemoOrdinaArray {
         
         LibreriaFunzioniArray.ordina(m);
         LibreriaFunzioniArray.stampa(m);
+        
+        
+        System.out.println(LibreriaFunzioniArray.cerca(elencoPersone, new Persona("Rossi", "Aldo")));
+        System.out.println(LibreriaFunzioniArray.cerca(m, new Messaggio("Ciao")));
         
     }
 
